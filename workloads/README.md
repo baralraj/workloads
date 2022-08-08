@@ -1,7 +1,27 @@
 # Workloads
 
-If you are using (k6)[https://k6.io/] for your load testing, you will
+## `k6`'s Problem
+
+If you are using [k6](https://k6.io/) for your load testing, you will
 want some pre-defined load *curves*.
+
+But, it seems you have to define your
+own:
+
+https://k6.io/docs/using-k6/scenarios/
+https://k6.io/docs/using-k6/k6-options/reference/#stages
+```javascript
+export const options = {
+  stages: [
+    { duration: '3m', target: 10 },
+    { duration: '5m', target: 10 },
+    { duration: '10m', target: 35 },
+    { duration: '3m', target: 0 },
+  ],
+};
+```
+
+## Solution
 
 The following are curves that are progressively steep, meaning the
 ramp to the desired load steeper. Another way to say this is that
