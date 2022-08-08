@@ -7,15 +7,15 @@ The following are curves that are progressively steep, meaning the
 ramp to the desired load steeper. Another way to say this is that
 the curves can be considered *spikier*:
 
-* Naturals <img src="linear.png" width=32>
-* Naturals Squared <img src="sqr.png" width=32>
-* Fibonnaci <img src="fib.png" width=32>
-* Exponential (2**N) <img src="exp.png" width=32>
+* <img src="linear.png" width=32> Naturals
+* <img src="sqr.png" width=32> Naturals Squared
+* <img src="fib.png" width=32> Fibonnaci
+* <img src="exp.png" width=32> Exponential (2**N)
 
 The following curves put the greater load early and then ramp
 slower to the desired load:
 
-* Log <img src="log.png" width=32>
+* <img src="log.png" width=32> Log
 
 ## Installation
 
