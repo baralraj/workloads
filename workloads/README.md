@@ -43,7 +43,7 @@ slower to the desired load:
 ### Review the Tests
 
 To see the `stages` for these curves see
-the tests at [workloads/test/workloads_test.exs](workloads/test/workloads_test.exs)
+the tests at [workloads/test/workloads_test.exs](/workloads/test/workloads_test.exs)
 
 ## Installation
 
