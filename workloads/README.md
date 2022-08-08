@@ -19,6 +19,7 @@ slower to the desired load:
 
 ## Installation
 
+In your `mix.exs` file:
 
 ```elixir
 def deps do
@@ -27,3 +28,10 @@ def deps do
   ]
 end
 ```
+
+Via `Mix.install`:
+
+```elixir
+Mix.install([
+  {:workloads, github: "czrpb/workloads", sparse: "workloads"}
+])
