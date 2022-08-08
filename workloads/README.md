@@ -40,6 +40,11 @@ slower to the desired load:
 
 * <img src="log.png" width=32> Log
 
+### Review the Tests
+
+To see the `stages` for these curves see
+the tests at [workloads/test/workloads_test.exs](workloads/test/workloads_test.exs)
+
 ## Installation
 
 In your `mix.exs` file:
