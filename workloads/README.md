@@ -9,7 +9,9 @@ But, it seems you have to define your
 own:
 
 https://k6.io/docs/using-k6/scenarios/
+
 https://k6.io/docs/using-k6/k6-options/reference/#stages
+
 ```javascript
 export const options = {
   stages: [
