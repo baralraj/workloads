@@ -10,7 +10,10 @@ defmodule Workloads do
   end
 
   def load(gen, duration, from, to) do
-    targets = targets_in_range(gen, from, to, [])
+    adj = if from == 1, do: 1, else: 0
+
+    targets = targets_in_range(gen, 1, to-from+1, [])
+    |> Enum.map( &(&1+from-adj) )
 
     no_of_bins = length(targets)
 

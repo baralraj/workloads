@@ -8,7 +8,7 @@ defmodule Workloads.Loads.Log do
   def next do
     {factor, x} = Agent.get(__MODULE__, & &1)
     Agent.update(__MODULE__, fn {factor, x} -> {factor, x + 1} end)
-    (:math.log(x) * factor) |> round
+    (:math.log(x) * factor) |> floor #round
   end
 
   def reset do
